@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Instrument Serif', serif;
+}
+
+.section-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100vh;
+    width: 100%;
+    
+    background: url(./5073414.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: aliceblue;
+}
+
+.back{
+    border: 1px solid white;
+    width: 500px;
+    height: 380px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(46, 45, 45);
+}
+
+h1{
+    text-align: center;
+    font-size:40px;
+    padding-bottom: 50px;    
+}
+
+h1 strong{
+   color: rgb(107, 105, 224);
+}
+
+.calc-area{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.calc-area label{
+    width: 10%;
+    font: 40px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    padding: 10px;  
+    font-size: 28px;
+}
+
+
+
+.calc-area input{
+    height: 28px;
+    font-size: 20px;
+    border: 0.5px solid white;
+    border-radius: 3px;
+
+    padding: 5px;
+}
+
+.calc-area input::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.btn-calc{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-calc button{
+    height: 30px;
+    width: 50%;
+    text-align: center;
+    margin:15px;
+    border-radius: 5px;
+    transition: 0.3s linear;
+   background-color: rgb(107, 105, 224);
+    color: white;
+    border: 1px transparent;
+    font-size: 20px;
+    text-transform:uppercase;
+}
+
+.btn-calc #apagar{
+    background-color: rgb(218, 30, 30);
+}   
+
+.btn-calc button:hover{
+    
+    color: white;
+    border: 1px solid white;
+}
+
+textarea{
+    margin-top: 20px;
+    width: 100%;
+    height: 60px;
+}
