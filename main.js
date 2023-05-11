@@ -12,28 +12,28 @@ function  calculate(){
     let classificacao;
 
     if (height !=="" && weight !==""){
-        if(imc < 16.5){
-            classificacao="Você está abaixo do peso"
-        }
-
-       else if(imc < 20.9){
-            classificacao="Você está com o peso normal"
+        if(imc < 18.5){
+            classificacao="você está abaixo do peso"
         }
 
        else if(imc < 24.9){
-            classificacao="Você está acima do peso"
+            classificacao="você está com o peso normal"
         }
 
        else if(imc < 29.9){
-            classificacao="Você está obeso"
+            classificacao="você está acima do peso"
         }
 
-        else if(imc < 34.9){
-            classificacao="Você está com obesidade mórbida"
+       else if(imc < 34.9){
+            classificacao="você está obeso"
+        }
+
+        else if(imc < 39.9){
+            classificacao="você está com obesidade mórbida"
         }
           
         else {
-            classificacao="Você está extremamente obeso"
+            classificacao="você está extremamente obeso"
         }
 
         result.innerHTML = `Seu IMC é ${imc} e ${classificacao}`
